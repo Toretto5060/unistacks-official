@@ -1,0 +1,79 @@
+
+<footer id="footer">
+    <!-- .subfooter start -->
+    <div class="subfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5" style="text-align: left;color:#fff;padding:0;">
+                    © 2017 unistack.com.cn 版权所有 ICP备案号:沪ICP备15031246号
+                </div>
+                <div class="col-md-3" style="text-align: center;color:#fff;padding-left:0">
+                	<span>微信公众号:</span>
+                	<div class="erweima">
+	                	<p><img src="images/solution/erweima.jpg" width="82" height="82" /></p>
+	                	<p style="font-size: 12px;">扫一扫关注我们</p>
+	                	<p class="call">
+	                		<span><img src="images/weibo.png"/></span>
+	                		<span><img src="images/weixin.png"/></span>
+	                		<span><img src="images/email.png"/></span>
+	                	</p>
+                	</div>
+                </div>
+                <div class="col-md-2" style="text-align: right;color:#fff;padding:0;">
+                	<p id="liuyan" style="text-align: center;margin-left: 60px;cursor: pointer;">留言板</p>
+                </div>	
+                <div class="col-md-2" style="text-align: right;color:#fff;padding:0;">
+                    <i class="glyphicon glyphicon-phone-alt"></i> : 021-56725196
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .subfooter end -->
+	<div class="backTop center">
+		<span class="glyphicon glyphicon-arrow-up"></span>
+	</div>
+	
+	<div class="modelf">
+		<div class="modelf-header">
+			<!--<h3>弹出标题</h3>-->
+			<span class="close">×</span> 
+		</div>
+		<div class="modelf-body">
+			<iframe height="670" allowTransparency="true" frameborder="0" scrolling="no"style="width:100%;border:none"src="http://bossbang.cc/web/formembed/59dd15d4bb7c7c467e1dcb79"></iframe>
+		</div>
+		
+	</div>
+	<div class="maskf"></div>
+</footer>
+<script>
+	$(window).scroll(function(){
+		var sc = $(window).scrollTop();
+		if(sc > 400){
+			$(".backTop").show();
+		}else{
+			$(".backTop").hide();
+		}
+	});
+	$(".backTop").click(function(){
+		$("body, html").animate({scrollTop: 0}, 300);
+	});
+	
+	
+	$(function(){
+		$("#liuyan").on("click",function(){
+			$(".modelf").fadeIn();
+			$(".maskf").fadeIn();
+			showModel();
+		});
+		$(".modelf>.modelf-header>.close").click(function(){
+			$(".modelf").fadeOut();
+			$(".maskf").fadeOut();
+		})
+		
+		$(document).keydown(function(e){
+			if(e.keyCode==27){
+				$(".modelf>.modelf-header>.close").click()
+			}
+		})
+		        });
+</script>

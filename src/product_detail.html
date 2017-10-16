@@ -1,0 +1,141 @@
+<div style="height: 100%" init-load="banner_tamboo">
+    <ng-include src="'html/header.html'"></ng-include><!-- banner start -->
+    <div id="banner" class="banner">
+        <div class="banner-image"></div>
+        <div class="banner-caption" style="top:50%">
+            <div class="container">
+                <div class="row">
+                    <div class="caption-data" style="margin-top: 0px; opacity: 1;width:50%"
+                         data-animation-effect="fadeIn"><h1 style="color:#FFF;transform: none;text-align: left">
+                        构建实时数据管道</h1></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="monitor" style="height:100px">&nbsp;</div><!-- section start -->
+    <section class="clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><h1 class="title text-center">监控</h1>
+                    <div class="space"></div>
+                    <div class="col-md-6 unslider" unslider='{"alia":"monitor","num":"3"}'></div>
+                    <div class="col-md-6"><!--<p>Lorem ipsum dolor sit amet,  beatae pet.</p>-->
+                        <ul class="list-unstyled kafka-detail">
+                            <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> 硬件监控</li>
+                            <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;CPU Load &#12288; <i
+                                    class="glyphicon glyphicon-hand-up"></i>&nbsp;Disk/Network IO &#12288; <i
+                                    class="glyphicon glyphicon-hand-up"></i>&nbsp;Memory &#12288; <i
+                                    class="glyphicon glyphicon-hand-up"></i>&nbsp;磁盘空间（log.dirs）
+                            </li>
+                            <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Broker监控</li>
+                            <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;Is alive？&#12288; <i
+                                    class="glyphicon glyphicon-hand-up"></i>&nbsp;数据流入/流出速度 &#12288; <i
+                                    class="glyphicon glyphicon-hand-up"></i>&nbsp;ISR shrink频率 &#12288; &#12288;
+                            </li>
+                            <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Producer监控</li>
+                            <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;Producer数量 &#12288; <i
+                                    class="glyphicon glyphicon-hand-up"></i>&nbsp;请求响应时间 &#12288; <i
+                                    class="glyphicon glyphicon-hand-up"></i>&nbsp;平均每秒请求数
+                            </li>
+                            <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> JVM监控</li>
+                            <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;垃圾回收时间</li>
+                            <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Topic监控</li>
+                            <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;数据量 &#12288; <i
+                                    class="glyphicon glyphicon-hand-up"></i>&nbsp;Offset &#12288; <i
+                                    class="glyphicon glyphicon-hand-up"></i>&nbsp;数据流入/流出速度
+                            </li>
+                            <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Consumer监控</li>
+                            <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;Consumer数量 &#12288; <i
+                                    class="glyphicon glyphicon-hand-up"></i>&nbsp;请求相应时间 &#12288; <i
+                                    class="glyphicon glyphicon-hand-up"></i>&nbsp;平均每秒请求数
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- section end --><!-- 管理-->
+    <div id="manage" style="height:100px">&nbsp;</div>
+    <section class="clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><h1 class="title text-center">管理</h1>
+                    <div class="space"></div>
+                    <div class="col-md-6 unslider" unslider='{"alia":"manage","num":"2"}'></div>
+                    <div class="col-md-6"><p>&#12288;&#12288;通过Mirror
+                        Maker集中实现跨数据中心的数据双向同步，以避免单个producer或consumer跨数据中心发送和接收消息造成的带宽资源浪费，同时也更易集中监控；</p>
+                        <p>&#12288;&#12288;本地和异地同步数据汇总至全量数据Kafka集群，避免影响本地数据Kafka集群的稳定性。</p>
+                        <ul class="list-unstyled kafka-detail">
+                            <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> 集群管理</li>
+                            <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;新增/移除Broker，修改Broker配置</li>
+                            <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Topic管理</li>
+                            <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;创建，删除 &#12288; <i
+                                    class="glyphicon glyphicon-hand-up"></i>&nbsp;增加/减少备份，修改per-topic config
+                            </li>
+                            <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Partition管理</li>
+                            <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;Partition移动，重分配</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- section end -->
+    <div id="safety" style="height:100px">&nbsp;</div><!-- 安全-->
+    <section class="clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><h1 class="title text-center">安全</h1>
+                    <div class="space"></div>
+                    <div class="row">
+                        <div class="col-md-6 unslider" unslider='{"alia":"safety","num":"1"}'></div>
+                        <div class="col-md-6"><p>&#12288;&#12288;用户验证使用Spring Security验证Tamboo用户，对不同的角色进行控制权限</p>
+                            <ul class="list-unstyled kafka-detail">
+                                <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> 数据隔离</li>
+                                <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;根据用户权限，对Kafka数据读写隔离</li>
+                                <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Topic权限控制</li>
+                                <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;通过ACL控制Read、Write、Describe权限</li>
+                                <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> SSL安全认证</li>
+                                <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;对数据传输加密，同时也进行基本的用户认证</li>
+                                <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> SASL安全认证</li>
+                                <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;使用SASL Plain或者Kerberos对Kafka添加用户和验证
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- 安全-->
+    <div id="saas" style="height:100px">&nbsp;</div>
+    <section class="clearfix" style="margin-bottom: 70px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><h1 class="title text-center">SaaS</h1>
+                    <div class="space"></div>
+                    <div class="row">
+                        <div class="col-md-6 unslider" unslider='{"alia":"saas","num":"1"}'></div>
+                        <div class="col-md-6"><p>&#12288;&#12288;以自助服务的方式对云平台租户提供Big Data As a Service</p>
+                            <ul class="list-unstyled kafka-detail">
+                                <li><i class="fa fa-arrow-circle-right pr-10 colored"></i>服务门户</li>
+                                <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;提供统一的登陆访问入口。</li>
+                                <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> 服务目录</li>
+                                <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;将有关现实世界中的事物的信息存储为具有描述性属性的对象。</li>
+                                <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> 容量管理</li>
+                                <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;在恰当的时间以一种经济节约的方式为数据处理和存储提供所需的容量。
+                                </li>
+                                <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> 多租户管理</li>
+                                <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;多个租户共用一个实例，租户的数据既有隔离又有共享,从而解决数据存储的问题。
+                                </li>
+                                <li><i class="fa fa-arrow-circle-right pr-10 colored"></i> 计量计费</li>
+                                <li><i class="glyphicon glyphicon-hand-up"></i>&nbsp;每月订阅费用&#12288; <i
+                                        class="glyphicon glyphicon-hand-up"></i>&nbsp;每个用户每月费用
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- section end -->
+    <ng-include src="'html/footer.html'"></ng-include>
+</div>

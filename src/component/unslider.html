@@ -1,0 +1,9 @@
+<div class="banner">
+    <div>
+        <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+            <uib-slide ng-repeat="slide in slides"  index="slide.id">
+                <a href="{{slide.url}}"><img ng-src="{{slide.image}}" style="margin:auto;width:100%;height: 100%;"></a>
+            </uib-slide>
+        </uib-carousel>
+    </div>
+</div>

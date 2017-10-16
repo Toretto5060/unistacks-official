@@ -1,0 +1,19 @@
+.unslider{
+  .banner {
+    .carousel-indicators {
+      li{
+        margin:2px;
+      }
+      >.active{
+        background: #fff;
+        opacity: 1;
+        width: 11px;
+        height: 11px;
+      }
+
+    }
+    .carousel-control{
+      display: none;
+    }
+  }
+}
